@@ -81,5 +81,5 @@ func requestHandler(w http.ResponseWriter, r *http.Request) {
 	http.Redirect(w, r, value, http.StatusFound)
 }
 func loadFavicon(w http.ResponseWriter, r *http.Request) {
-	http.ServeFile(w, r, "favicon.ico")
+	http.ServeFile(w, r, "./assets/favicon.ico")
 }
